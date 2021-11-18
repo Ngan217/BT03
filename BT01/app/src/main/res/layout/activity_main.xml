@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HelloWord"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+        android:background="#808080"
+        android:fontFamily="sans-serif-condensed-medium"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/android"
+                ></ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <Button
+                android:text="New Game"
+                android:id="@+id/btnnewgame"
+                android:layout_width="300px"
+                android:layout_height="120px"
+                android:lines="1"
+                android:padding="10px"
+                android:layout_gravity="center"
+                android:clickable="true"
+                ></Button>
+            <Button
+                android:text="Continue Game"
+                android:id="@+id/btncontinuegame"
+                android:layout_width="300px"
+                android:layout_height="120px"
+                android:lines="1"
+                android:padding="10px"
+                android:layout_gravity="center"
+                ></Button>
+            <Button
+                android:text="Help Game"
+                android:id="@+id/btnhelpgame"
+                android:layout_width="300px"
+                android:layout_height="120px"
+                android:lines="1"
+                android:padding="10px"
+                android:layout_gravity="center"
+                ></Button>
+            <Button
+                android:text="Quick Game"
+                android:id="@+id/btnquickgame"
+                android:layout_width="300px"
+                android:layout_height="120px"
+                android:lines="1"
+                android:padding="10px"
+                android:layout_gravity="center"
+                ></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
